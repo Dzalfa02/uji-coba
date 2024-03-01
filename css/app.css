@@ -1,0 +1,119 @@
+*,
+*::before
+*::after{box-sizing: border-box;}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header.navbar-container {
+    width: 100%;
+    max-width: auto;
+    padding-block: 1rem;
+    margin-inline: auto;
+    background-color: #87CEEB;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    z-index: 9999;
+    position: fixed;
+    top: 8;
+}
+
+header.navbar-container .logo img{
+    width: 500px;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 3rem;
+    list-style-type: none;
+}
+
+
+header.navbar-conatiner .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+    background-color: #6699cc;
+    color: aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+main {
+    flex: 1;
+    width: 100%; max-width: 1200px;
+    margin-inline: auto;
+    padding: 6rem 4rem;
+    display: flex; align-items: center;
+    margin-top: 100px;
+}
+
+main .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+main .content .content-description {
+    flex: 1 1;
+}
+
+main .content .content-description .title {
+    margin-block: 1.2rem;
+    line-height: 1.2rem;
+    text-align: justify;
+}
+
+main .content .content-description a {
+  
+    padding: 0.8rem 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    margin-block-start: 1rem;
+    background-color: #87CEEB;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    text-align: justify;
+    transition: all 0.15s ease-in;
+}
+
+main .content .content-description a:hover {
+    border: 1px solid #000000;
+    background-color: transparent;
+    color: #87CEEB;
+}
+
+main .content .content-image {
+    flex: 1;
+    display: flex;
+}
+
+main .content .content-image img {
+    width: 300px;
+    min-width: 250px;
+    margin: auto;
+}
